@@ -1,0 +1,31 @@
+.BACKLOG {
+	background: #b95959;
+}
+
+.BACKLOG:hover {
+	background: #a33;
+}
+
+.READY {
+	background: #9393e8;
+}
+
+.READY:hover {
+	background: #6060c6;
+}
+
+.IN_PROGRESS {
+	background: #4b69b1;
+}
+
+.IN_PROGRESS:hover {
+	background: #2d4b95;
+}
+
+.DONE {
+	background: #a0b959;
+}
+
+.DONE:hover {
+	background: #89a636;
+}

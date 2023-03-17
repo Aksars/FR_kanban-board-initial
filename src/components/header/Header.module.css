@@ -1,0 +1,81 @@
+.header {
+	background: #000;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.logo {
+	width: 35px;
+	margin-right: 5px;
+	margin-left: 14px;
+}
+
+.userName {
+	cursor: default;
+}
+
+.logoBlock{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-left: auto;
+}
+.logoArrow{
+	transition: 0.3s;
+	transform-origin: 57% 57%;
+	transform: rotate(1deg);
+}
+.logoArrow.reverted{
+	transform: rotate(180deg);
+}
+.userActions {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: white;	
+	width: 100%;
+	border-radius: 3px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+}
+.userActions.opened{
+	visibility: visible;
+	opacity: 1;
+}
+.logoImageblock{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.logout{
+
+}
+.profile{
+
+}
+.userActionItem{
+	padding: 1em;
+	cursor: pointer;
+	transition: 0.3s;
+	font-weight: bold;
+	color: #282828;
+}
+.userActionItem:hover {
+	background-color: #e1e1e1;
+}
+.userActionItem:not(:last-child) {
+	border-bottom: 1px solid #b0b0b0;
+}
+
+@media (max-width: 700px){
+	
+	.title {				
+		display: none;	
+	}
+}

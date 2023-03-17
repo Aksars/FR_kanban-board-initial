@@ -1,0 +1,135 @@
+.wrapper {
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px;	
+	
+}
+.wrapper , .statusRow {
+	width: 46%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 550px;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.5em;
+}
+
+.title {
+	margin: 0;
+}
+
+.createdAt {
+	color: #737373;
+	font-style: italic;
+}
+
+.status {
+	color: #fff;
+	background: #465571;
+	font-weight: bold;
+	margin: 0;
+	padding: 8px 20px;
+	border-radius: 20px;
+	pointer-events: none;
+	user-select: none;
+}
+
+.label {
+	margin-bottom: 10px;
+}
+
+.select {
+	padding: 9px;
+	border-radius: 8px;
+	background-color: white;
+	outline: none;
+	border: 1px solid black;
+	box-shadow: 1px 1px 3px #00000029;
+}
+
+.homeLink {
+	display: block;
+	margin-top: 0em;
+	text-decoration: none;
+	color: #737373;
+
+}
+
+.homeLink:hover {
+	color: #000;
+}
+
+.emptyState {
+	text-align: center;
+}
+
+.emptyStateIcon {
+	width: 200px;
+}
+
+.deleteBtn {
+	margin-left: 1em;
+	border: none;
+	/* background-color: transparent; */
+	padding: 8px 20px;
+	background-color: #b95959;
+	color: white;
+	border-radius: 4px;
+	transition: 0.3s;
+	cursor: pointer;
+	display: block;
+	margin-top: 1em;
+	margin-left: 0;
+}
+.deleteBtn:hover {
+	background-color: #db4c4c;
+}
+.descriptionCont {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 1em;
+	flex-direction: column;
+}
+.staticDescr {
+	margin-bottom: 0.5em;
+}
+.editableDescr{
+	width: 100%;
+	border: 1px solid #d0d0d059;
+	box-shadow: 1px 1px 5px #e1e1e1;
+	font-size: 16px;
+	padding: 0.5em 1em;
+	height: auto;
+	resize: vertical;
+	height: 7em;
+	box-sizing: border-box;
+}
+.statusRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1em;
+}
+@media (min-width:2000px) {
+	
+	.wrapper , .statusRow {
+		width: 1000px;
+		min-width: initial;
+	}
+
+}
+
+
+
+@media (max-width:700px) {
+	
+	.wrapper , .statusRow {
+		width: 90%;
+		min-width: initial;
+	}
+
+}
+

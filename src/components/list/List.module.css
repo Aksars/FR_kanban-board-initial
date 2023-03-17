@@ -1,0 +1,134 @@
+.list {
+	width: 350px;
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	margin: 15px;
+	box-shadow: 2px 2px 8px rgb(0 0 0 / 20%);
+}
+
+.listTitle {
+	margin-top: 0;
+}
+
+.task {
+	background: #465671;
+	color: #fff;
+	margin: 7px 0;
+	padding: 8px;
+	border-radius: 8px;
+	transition: 0.3s;
+}
+
+.task:hover {}
+
+.taskLink {
+	text-decoration: none;
+}
+
+ .addButton {
+	background: none;
+	border: none;
+	appearance: none;
+	font-size: 15px;
+	color: #737373;	
+	cursor: pointer;
+}
+
+.addTaskButtonBlock:hover .addButton{
+	color: #000;
+}
+
+.errorLabel {
+	display: block;
+	background: #b95959;
+	padding: 1em;
+	color: white;
+	border-radius: 4px;
+	margin-top: 1em;
+}
+
+.BACKLOG {
+	background: #b95959;
+}
+
+.BACKLOG:hover {
+	background: #a33;
+}
+
+.READY {
+	background: #9393e8;
+}
+
+.READY:hover {
+	background: #6060c6;
+}
+
+.IN_PROGRESS {
+	background: #4b69b1;
+}
+
+.IN_PROGRESS:hover {
+	background: #2d4b95;
+}
+
+.DONE {
+	background: #a0b959;
+}
+
+.DONE:hover {
+	background: #89a636;
+}
+
+.taskAddList {
+	background-color: white;
+	width: 100%;
+	border-radius: 3px;
+	transition: 0.3s;
+	margin-top: 15px;
+	display: none;
+}
+.addTaskBlock.opened .taskAddList{
+	display: block;
+}
+
+.taskAddArrow{
+	transition: 0.3s;
+	transform-origin: 57% 57%;
+	transform: rotate(1deg);
+}
+.addTaskBlock.opened .taskAddArrow {
+	transform: rotate(180deg);
+}
+
+
+.addTaskButtonBlock{
+	display: flex;
+	align-items: center;	
+	padding: 0.5em 1em;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.addTaskBlock{
+	display: block;
+	margin-top: 1em;
+	background-color: white;
+	cursor: pointer;
+	user-select: none;
+}
+.addTaskItem{
+	padding: 1em;
+	cursor: pointer;
+	transition: 0.3s;
+	/* font-weight: bold; */
+	color: #1e1e1e;
+	background-color: #e1e1e126;
+}
+.addTaskItem:not(:last-child) {
+	border-bottom: 1px solid #b0b0b0;
+}
+.addTaskItem:hover {
+	background-color: #e1e1e1;
+}
+
